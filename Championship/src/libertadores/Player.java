@@ -49,9 +49,8 @@ public class Player {
 	return "Player [name=" + name + ", "
 			+ "age=" + age + ","
 			+ " shirt=" + shirt + ","
-							+ " position=" + position + ","
-									+ " nationality="
-			+ nationality + "]";
+			+ " position=" + position + ","
+			+ " nationality="+ nationality + "]";
  }
  
  
