@@ -6,6 +6,7 @@ public class Player {
  protected int shirt;
  protected String position;
  protected String nationality;
+ 
  public Player(String name, int age, int shirt, String position, String nationality) {
 	super();
 	this.name = name;
