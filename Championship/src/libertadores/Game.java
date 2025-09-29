@@ -1,25 +1,47 @@
 package libertadores;
 
 
-public class Game {
+public class Game   implements GameMatch {
 	protected String home;
 	protected String visitor;
+	protected int homeGoals;
+	protected int visitorGoals;
 	protected boolean won=false ;
 	protected float time;
 	protected boolean underway;
 	protected int scoreboard;
+
 	
 	
-	public Game(String home, String visitor, boolean won, float time, boolean underway, int scoreboard) {
+	
+	
+	public Game(String home, String visitor, int homeGoals, int visitorGoals) {
 		super();
 		this.home = home;
 		this.visitor = visitor;
-		this.won = won;
-		this.time = time;
-		this.underway = underway;
-		this.scoreboard = scoreboard;
+		this.homeGoals = homeGoals;
+		this.visitorGoals = visitorGoals;
+//		this.won = won;
+//		this.time = time;
+//		this.underway = underway;
+//		this.scoreboard = scoreboard;
 	}
 
+	public int getHomeGoals() {
+		return homeGoals;
+	}
+
+	public void setHomeGoals(int homeGoals) {
+		this.homeGoals = homeGoals;
+	}
+
+	public int getVisitorGoals() {
+		return visitorGoals;
+	}
+
+	public void setVisitorGoals(int visitorGoals) {
+		this.visitorGoals = visitorGoals;
+	}
 
 	public String getHome() {
 		return home;
@@ -85,6 +107,32 @@ public class Game {
 	public String toString() {
 		return "Game [home=" + home + ", visitor=" + visitor + ", won=" + won + ", time=" + time + ", underway="
 				+ underway + ", scoreboard=" + scoreboard + "]";
+	}
+
+
+
+@Override
+	public void win() {
+		
+	}
+
+
+	@Override
+	public void lose() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	public void draw() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void showScoreboard() {
+		System.out.println(getHome()+ getHomeGoals() +     " X "  + getVisitorGoals()      +getVisitor());
 	}
 	
 	
