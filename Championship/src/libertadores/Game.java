@@ -6,7 +6,6 @@ public class Game {
 	protected float time;
 	protected boolean underway;
 
-	
-	
+
 }
 
