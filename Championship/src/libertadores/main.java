@@ -5,7 +5,7 @@ public class main {
 		
 		Club c[]=new Club[20];
 		c[0]=new Club("Palmeiras");
-//		System.out.println(c[0].toString());
+		System.out.println(c[0].toString());
 		
 		c[1]=new Club("Bahia");
 //		System.out.println(c[1].toString());

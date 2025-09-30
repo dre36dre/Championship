@@ -12,8 +12,8 @@ public class Match  implements GameMatch {
 		this.visitor=visitor;
 		this.homeGoals=homeGoals;
 		this.visitingGoals=visitingGoals;
-		this.home.setName(this.home.getName());
-		this.visitor.setName(this.visitor.getName());
+//		this.home.setName(this.home.getName());
+//		this.visitor.setName(this.visitor.getName());
 	}
 	
 
@@ -21,25 +21,16 @@ public class Match  implements GameMatch {
 		return homeGoals;
 	}
 
-
-
 	public void setHomeGoals(int homeGoals) {
 		this.homeGoals = homeGoals;
 	}
 
-
-
 	public int getVisitingGoals() {
 		return visitingGoals;
 	}
-
-
-
 	public void setVisitingGoals(int visitingGoals) {
 		this.visitingGoals = visitingGoals;
 	}
-
-
 
 	public Club getHome() {
 		return home;
@@ -59,10 +50,10 @@ public class Match  implements GameMatch {
 
 	@Override
 	public String toString() {
-		return    "home=" + home + ", "
-				+ " homeGoals=" + homeGoals + ", "
-				+ "visitingGoals="	+ visitingGoals
-		+ "visitor=" + visitor ;
+		return     home + ", "
+				 + homeGoals 
+					+ visitingGoals
+				 + visitor ;
 	}
 
 

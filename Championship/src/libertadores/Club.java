@@ -8,8 +8,8 @@ public class Club {
 	public Club(String name) {
 		super();
 		this.name = name;
-		this.dataFoundation = dataFoundation;
-		this.stadiumName = stadiumName;
+//		this.dataFoundation = dataFoundation;
+//		this.stadiumName = stadiumName;
 	}
 	
 	public String getName() {
@@ -30,12 +30,10 @@ public class Club {
 	public void setStadiumName(String stadiumName) {
 		this.stadiumName = stadiumName;
 	}
-//	@Override
-//	public String toString() {
-//		return "\nClube:" + name + "\n"
-//				+"Date of fundation:" + dataFoundation + "\n"
-//				+"Stadium Name:" + stadiumName;
-//	}
+	@Override
+	public String toString() {
+		return "\n + name + "\n";
+	}
 	
 	
 	
