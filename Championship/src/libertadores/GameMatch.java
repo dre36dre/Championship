@@ -6,5 +6,6 @@ public interface GameMatch {
 	public void lose();
 	public void draw();
 	public void showScoreboard();
+	
 
 }

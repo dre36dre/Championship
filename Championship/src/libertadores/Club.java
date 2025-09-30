@@ -4,12 +4,14 @@ public class Club {
 	protected String name;
 	protected String dataFoundation;
 	protected String stadiumName;
-	public Club(String name, String stadiumName,String dataFoundation) {
+	
+	public Club(String name) {
 		super();
 		this.name = name;
 		this.dataFoundation = dataFoundation;
 		this.stadiumName = stadiumName;
 	}
+	
 	public String getName() {
 		return name;
 	}
@@ -28,12 +30,12 @@ public class Club {
 	public void setStadiumName(String stadiumName) {
 		this.stadiumName = stadiumName;
 	}
-	@Override
-	public String toString() {
-		return "Clube:" + name + "\n"
-				+"Date of fundation:" + dataFoundation + "\n"
-				+"Stadium Name:" + stadiumName;
-	}
+//	@Override
+//	public String toString() {
+//		return "\nClube:" + name + "\n"
+//				+"Date of fundation:" + dataFoundation + "\n"
+//				+"Stadium Name:" + stadiumName;
+//	}
 	
 	
 	
