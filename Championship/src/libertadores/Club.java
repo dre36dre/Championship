@@ -32,7 +32,7 @@ public class Club {
 	}
 	@Override
 	public String toString() {
-		return "\n + name + "\n";
+		return  name ;
 	}
 	
 	

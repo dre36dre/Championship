@@ -5,18 +5,21 @@ public class main {
 		
 		Club c[]=new Club[20];
 		c[0]=new Club("Palmeiras");
-		System.out.println(c[0].toString());
+//		System.out.println(c[0].toString());
 		
 		c[1]=new Club("Bahia");
 //		System.out.println(c[1].toString());
+		c[2]=new Club("São Paulo");
+		c[3]=new Club("Vasco");
+		
 		
 		Match m[]=new Match[40];
 		m[0]=new Match(c[0], c[1],4,0);
-		
+		m[1]=new Match(c[0], c[2], 2, 0);
 //		c[0].toString();
 		
-		 System.out.println( m[0].toString());
-		
+		System.out.println( m[0].toString());
+		System.out.println(m[1].toString());
 		
 
 	}

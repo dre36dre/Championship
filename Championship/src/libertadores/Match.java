@@ -50,15 +50,23 @@ public class Match  implements GameMatch {
 
 	@Override
 	public String toString() {
-		return     home + ", "
-				 + homeGoals 
+		return     home + " "
+				 + homeGoals+ " X "
 					+ visitingGoals
-				 + visitor ;
+				 +" "+ visitor   ;
+		
 	}
 
 
 	@Override
 	public void win() {
+		if(homeGoals == (visitingGoals)) {
+			System.out.println("Empatou");			
+		}else if(homeGoals > (visitingGoals)){
+			System.out.println(home+" venceu");
+		}else {
+			System.out.println(visitor + "venceu");
+		}
 	}
 
 	@Override
