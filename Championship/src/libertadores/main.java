@@ -29,6 +29,8 @@ public class main {
 		m[2].play();
 		m[3].play();
 		
+		
+		System.out.println("========Matches==========\n");
 		List<Match> matches=Arrays.asList(m[0],m[1],m[2] ,m[3]);
 		
 		for(Match ma: matches) {
