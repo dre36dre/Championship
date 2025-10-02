@@ -109,30 +109,16 @@ public class Game   implements GameMatch {
 				+ underway + ", scoreboard=" + scoreboard + "]";
 	}
 
-
-
-@Override
-	public void win() {
-		
-	}
-
-
+	
 	@Override
-	public void lose() {
-		// TODO Auto-generated method stub
-		
-	}
-
-
-	@Override
-	public void draw() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void showScoreboard() {
+	public void Matches() {
 		System.out.println(getHome()+ getHomeGoals() +     " X "  + getVisitorGoals()      +getVisitor());
+	}
+
+	@Override
+	public void play() {
+		// TODO Auto-generated method stub
+		
 	}
 	
 	

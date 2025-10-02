@@ -57,33 +57,16 @@ public class Match  implements GameMatch {
 		
 	}
 
-
 	@Override
-	public void win() {
-		if(homeGoals == (visitingGoals)) {
-			System.out.println("Empatou");			
-		}else if(homeGoals > (visitingGoals)){
-			System.out.println(home+" venceu");
-		}else {
-			System.out.println(visitor + "venceu");
-		}
-	}
-
-	@Override
-	public void lose() {
-		
-	}
-
-	@Override
-	public void draw() {
-		
+	public void Matches() {
+		System.out.println( home.getName() + " " + homeGoals + " x " + visitingGoals + " " + visitor.getName());
 	}
 
 
 	@Override
-	public void showScoreboard() {
-		System.out.println("=========================PLACAR====================");
-		System.out.println(home+ " X " + getVisitor() );
+	public void play() {
+		 home.updateMatch(homeGoals, visitingGoals);
+	        visitor.updateMatch(visitingGoals, homeGoals);		
 	}
 
 	
